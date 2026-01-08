@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "My Posts Page";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/myPost.css" />
+}
+
+<div class="post-container">
+    @if (Model != null && Model.Count > 0)
+    {
+        foreach (var post in Model)
+        {
+            <div class="post-card">
+                @if (!string.IsNullOrWhiteSpace(post.ImgPath))
+                {
+                    <div class="post-image">
+                        <img src="@post.ImgPath" alt="Post Image" />
+                    </div>
+                }
+
+                <div class="post-content">
+                    <h2>@post.Title</h2>
+                    <p>@post.Description</p>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="no-posts">
+            <p>No posts found for your account.</p>
+        </div>
+    }
+</div>

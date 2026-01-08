@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "login Page";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/login.css" />
+}
+
+
+
+
+
+
+
+<div class="container-fluid">
+
+
+
+    <form asp-action="login" method="post" class="login-form">
+        <h2>Welcome Back</h2>
+        <p>Enter your credential to <span class="lo">login</span></p>
+
+        <h2>@ViewBag.regsterResult</h2>
+        <h2>@TempData["RegisterSuccess"]</h2>
+
+        <div class="form-group">
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+        </div>
+
+        <div class="form-options">
+            <label><input type="checkbox"> Remember Me</label>
+            <a href="#">forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn-login">login</button>
+
+        <p class="register-text">dont have an account ? <a asp-controller="Users" asp-action="regster">Register</a></p>
+    </form>
+
+
+@section Scripts {
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (TempData["LoginResult"]?.ToString() == "Failed")
+    {
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Login failed!',
+                    text: 'Email or password is incorrect.',
+                });
+            </script>
+    }
+
+    @if (TempData["LoginSuccess"] != null)
+    {
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: '@TempData["LoginSuccess"]',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            </script>
+    }
+}

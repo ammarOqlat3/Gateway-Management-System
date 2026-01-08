@@ -1,0 +1,254 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/index.css" />
+}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/home1.jpg" alt="First slide">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <div class="text-box">
+                    <h3 class="fw-bold">GateWay</h3>
+                    <p>Your Place to enhance productivity,<br>and empower your workforce.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/banner.jpg" alt="Second slide">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <div class="text-box">
+                    <h3 class="fw-bold">GateWay</h3>
+                    <p>Your Place to enhance productivity,<br>and empower your workforce.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/banner2.jpg" alt="Third slide">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <div class="text-box">
+                    <h3 class="fw-bold">GateWay</h3>
+                    <p>Your Place to enhance productivity,<br>and empower your workforce.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+@* <button type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button> *@
+
+@if (TempData["Email"] != null && TempData["Password"] != null)
+{
+    <div>
+        <p>Email: @TempData["Email"]</p>
+        <p>Password: @TempData["Password"]</p>
+    </div>
+}
+
+
+
+
+<div class="container">
+    <div class="partnerships">
+        <h2>Trust built on 2000+ global partnerships.</h2>
+        <div class="partners-logos">
+            <div class="partner">
+                <img src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/Image%2022.png" alt="Apex Fusion">
+                <p>Apex Fusion</p>
+            </div>
+            <div class="partner">
+                <img src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/Image%2023.png" alt="Nebula Dynamics">
+                <p>Nebula Dynamics</p>
+            </div>
+            <div class="partner">
+                <img src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/Image%2024.png" alt="Virtuoso">
+                <p>Virtuoso</p>
+            </div>
+            <div class="partner">
+                <img src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/Image%2025.png" alt="Quantum">
+                <p>Quantum</p>
+            </div>
+            <div class="partner">
+                <img src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/Image%2026.png" alt="Pinnacle Nexus">
+                <p>Pinnacle Nexus</p>
+            </div>
+            <div class="partner">
+                <img src="https://aimanaj.github.io/HR-Management-System/All%20pages/assest/images/Image%2027.png" alt="Elysium Global">
+                <p>Elysium Global</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>welcome to GateWay</h3>
+                <p>
+                    "Welcome to GateWay, your comprehensive solution for seamless
+                    employee management. Our platform is designed to streamline your
+                    HR processes, enhance productivity, and empower your workforce.
+                    From recruitment and onboarding to performance management, we
+                    offer an intuitive and efficient system to manage every aspect
+                    of your HR operations. Experience the benefits of automated
+                    workflows, detailed analytics, and centralized employee
+                    information, all in one user-friendly interface. Our
+                    customizable features ensure that your HR needs are met with
+                    precision and flexibility. Join countless organizations that
+                    have transformed their HR operations with GateWay, and take the
+                    first step towards a more organized and productive workplace."
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://i.ibb.co/c3psJR6/Employee-1.jpg" alt="Ammar's Photo" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section">
+        <div class="row flex-row-reverse">
+            <div class="col-md-6">
+                <h3>The key strengths and benefits of choosing GateWay system</h3>
+                <p>
+
+                    "At GateWay, we believe that HR management should be simple and
+                    efficient. We offer comprehensive solutions that cater to your
+                    company's needs with an intuitive user interface and a
+                    personalized experience. Our advanced technology streamlines
+                    processes, reduces errors, and boosts productivity, giving you
+                    more time to focus on what truly matters – the growth and
+                    success of your team."
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://i.ibb.co/c3psJR6/Employee-1.jpg" alt="Ammar's Photo" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="qus">Why Us?</div>
+
+    <div class="cardGrid">
+        <div class="cards">
+
+            <h4>Efficiency</h4>
+            <p>Streamline HR processes with automation and centralized data.</p>
+        </div>
+        <div class="cards">
+
+            <h4>Efficiency</h4>
+            <p>Streamline HR processes with automation and centralized data.</p>
+        </div>
+        <div class="cards">
+
+            <h4>Efficiency</h4>
+            <p>Streamline HR processes with automation and centralized data.</p>
+        </div>
+        <div class="cards">
+
+            <h4>Efficiency</h4>
+            <p>Streamline HR processes with automation and centralized data.</p>
+        </div>
+        <div class="cards">
+
+            <h4>Efficiency</h4>
+            <p>Streamline HR processes with automation and centralized data.</p>
+        </div>
+        <div class="cards">
+
+            <h4>Efficiency</h4>
+            <p>Streamline HR processes with automation and centralized data.</p>
+        </div>
+
+
+
+    </div>
+
+    <div class="cust">
+        <p>Happy Customers</p>
+        <h1>We deliver what we promise.<br> See what clients are expressing about us.</h1>
+        <hr>
+
+
+        <div class="cardGrid">
+            <div class="cards">
+
+                <h4>Efficiency</h4>
+                <p>Streamline HR processes with automation and centralized data.</p>
+            </div>
+            <div class="cards">
+
+                <h4>Efficiency</h4>
+                <p>Streamline HR processes with automation and centralized data.</p>
+            </div>
+            <div class="cards">
+
+                <h4>Efficiency</h4>
+                <p>Streamline HR processes with automation and centralized data.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+@if (TempData["RegisterSuccess"] != null)
+{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: '@TempData["RegisterSuccess"]',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    </script>
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (Context.Session.GetString("LoginSuccess") != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: '@Context.Session.GetString("LoginSuccess")',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        </script>
+    }
+}

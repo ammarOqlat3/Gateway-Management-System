@@ -1,0 +1,101 @@
+﻿.container-fluid {
+    background: url("https://aimanaj.github.io/HR-Management-System/All%20pages/login%20assets/imges/596e74da-c919-430c-9f48-2181d2c9cc36.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+/* .login-form{
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 50%;
+
+} */
+
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.1); /* شفافية */
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px solid rgb(230, 228, 228);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+}
+
+    .login-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .login-form p {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+        .login-form p span.lo {
+            color: #3ee9f4;
+            font-weight: bold;
+        }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 2px solid rgb(230, 228, 228);
+    background-color: rgba(0, 0, 0, 0.1); /* شفافية */
+
+
+    font-size: 15px;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+    .form-options a {
+        color: #3ee9f4;
+        text-decoration: none;
+    }
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #3ee9f4;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+    .register-text a {
+        color: #3ee9f4;
+        text-decoration: none;
+    }

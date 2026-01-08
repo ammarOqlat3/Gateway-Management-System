@@ -1,0 +1,169 @@
+﻿@model GetWayPro.Models.User
+@using Microsoft.AspNetCore.Http
+
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/myProfile.css" />
+}
+
+<form asp-action="myProfile" method="post">
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                    <span class="font-weight-bold">@Model.Name</span>
+                    <span class="text-black-50">@Model.Email</span>
+                </div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">Name</label>
+                            <input asp-for="Name" class="form-control" placeholder="First name" />
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Address</label>
+                            <input asp-for="Address" class="form-control" placeholder="Address" />
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Email ID</label>
+                            <input asp-for="Email" class="form-control" placeholder="Email" />
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Education</label>
+                            <input asp-for="Education" class="form-control" placeholder="Education" />
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Country</label>
+                            <input asp-for="Country" class="form-control" placeholder="Country" />
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <button class="btn btn-primary profile-button" type="submit">Save Profile</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- العمود الثالث مع أزرار الإجراء -->
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span>Edit Actions</span>
+                    </div>
+
+                    <!-- زر Add Post -->
+                    <div class="mt-3">
+                        <a class="btn btn-outline-primary w-100 mb-2" asp-controller="Users" asp-action="AddPost">
+                            <i class="fa fa-plus"></i> Add Post
+                        </a>
+                    </div>
+                    <!-- زر Add proudact -->
+                    <div class="mt-3">
+                        <a class="btn btn-outline-primary w-100 mb-2" asp-controller="Users" asp-action="AddProduct">
+                            <i class="fa fa-plus"></i> Add proudact
+                        </a>
+                    </div>
+
+                    <!-- زر Change Password -->
+                    <div class="mt-3">
+                        <a class="btn btn-outline-warning w-100" asp-controller="Users" asp-action="changePassword">
+                            <i class="fa fa-key"></i> Change Password
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@{
+    var passwordMessage = Context.Session.GetString("PasswordChangedSuccess");
+    if (passwordMessage != null)
+    {
+        Context.Session.Remove("PasswordChangedSuccess");
+    }
+
+    var profileSaved = Context.Session.GetString("ProfileSaved");
+    if (profileSaved != null)
+    {
+        Context.Session.Remove("ProfileSaved");
+    }
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // التعامل مع الفورم
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault(); // منع الإرسال مؤقتاً
+            Swal.fire({
+                title: 'Do you want to save the changes?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, save it!',
+                cancelButtonText: 'No, cancel',
+                reverseButtons: true,
+                toast: false,
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    e.target.submit(); // إرسال النموذج
+                } else {
+                    Swal.fire({
+                        icon: 'info',
+                        title: 'Changes are not saved',
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 2000
+                    });
+                }
+            });
+        });
+
+        // عرض SweetAlert عند حفظ البروفايل
+        @if (!string.IsNullOrEmpty(profileSaved))
+        {
+                <text>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Profile updated successfully!',
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 2500
+                    });
+                </text>
+        }
+
+        // عرض SweetAlert عند تغيير كلمة المرور
+        @if (!string.IsNullOrEmpty(passwordMessage))
+        {
+                <text>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: '@passwordMessage',
+                        timer: 2000,
+                        showConfirmButton: false
+                    });
+                </text>
+        }
+    </script>
+}

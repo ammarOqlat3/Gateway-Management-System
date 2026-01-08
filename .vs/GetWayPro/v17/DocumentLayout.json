@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|c:\\users\\ammar\\onedrive\\desktop\\asp.netorange\\getwaypro\\getwaypro\\views\\users\\addpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|solutionrelative:getwaypro\\views\\users\\addpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|c:\\users\\ammar\\onedrive\\desktop\\asp.netorange\\getwaypro\\getwaypro\\views\\users\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|solutionrelative:getwaypro\\views\\users\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|c:\\users\\ammar\\onedrive\\desktop\\asp.netorange\\getwaypro\\getwaypro\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|solutionrelative:getwaypro\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|c:\\users\\ammar\\onedrive\\desktop\\asp.netorange\\getwaypro\\getwaypro\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|solutionrelative:getwaypro\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|c:\\users\\ammar\\onedrive\\desktop\\asp.netorange\\getwaypro\\getwaypro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|solutionrelative:getwaypro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|c:\\users\\ammar\\onedrive\\desktop\\asp.netorange\\getwaypro\\getwaypro\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|solutionrelative:getwaypro\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|c:\\users\\ammar\\onedrive\\desktop\\asp.netorange\\getwaypro\\getwaypro\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4106192E-D06A-4702-AA28-783DCF6676FD}|GetWayPro\\GetWayPro.csproj|solutionrelative:getwaypro\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddPost.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Views\\Users\\AddPost.cshtml",
+              "RelativeDocumentMoniker": "GetWayPro\\Views\\Users\\AddPost.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Views\\Users\\AddPost.cshtml",
+              "RelativeToolTip": "GetWayPro\\Views\\Users\\AddPost.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T17:46:03.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GetWayPro\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GetWayPro\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T17:45:17.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Views\\Users\\AddProduct.cshtml",
+              "RelativeDocumentMoniker": "GetWayPro\\Views\\Users\\AddProduct.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Views\\Users\\AddProduct.cshtml",
+              "RelativeToolTip": "GetWayPro\\Views\\Users\\AddProduct.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwC4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T17:11:57.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "GetWayPro\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "GetWayPro\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:04:49.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GetWayPro\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GetWayPro\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAswHQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T16:49:14.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "shop.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Views\\Home\\shop.cshtml",
+              "RelativeDocumentMoniker": "GetWayPro\\Views\\Home\\shop.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Views\\Home\\shop.cshtml",
+              "RelativeToolTip": "GetWayPro\\Views\\Home\\shop.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T12:24:34.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "GetWayPro\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\asp.netOrange\\GetWayPro\\GetWayPro\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "GetWayPro\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAADwv40AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:44:24.296Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

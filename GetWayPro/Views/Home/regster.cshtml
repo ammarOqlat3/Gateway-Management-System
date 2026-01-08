@@ -1,0 +1,77 @@
+﻿@model GetWayPro.Models.User
+
+
+
+
+@{
+    ViewData["Title"] = "login Page";
+   
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/login.css" />
+}
+
+
+
+
+
+
+
+<div class="container-fluid">
+
+
+
+    <form asp-action="regster" method="post" class="login-form">
+        @* @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        } *@
+
+     
+        <p>Fill in your details to create an account</p>
+
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email" required />
+            <input type="password" name="password" class="form-control" placeholder="Password" required />
+            <input type="password" name="repeatpass" class="form-control" placeholder="Repeat Password" required />
+
+        </div>
+
+        <div class="form-options">
+            <label><input type="checkbox"> Remember Me</label>
+            <a href="#">forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn-login">Register</button>
+
+
+        <p class="register-text">Already have an account? <a asp-controller="Users" asp-action="login">Login</a></p>
+    </form>
+@section Scripts {
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (TempData["LoginResult"] != null && TempData["LoginResult"].ToString() == "Failed")
+    {
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Login failed!',
+                    text: 'Email or password is incorrect.',
+                });
+            </script>
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
